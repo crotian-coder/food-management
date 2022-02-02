@@ -1,0 +1,241 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>WebSite Development</title>
+	<link rel="stylesheet" href="{% static 'css/style.css'%}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="main_container" id="home">
+
+		<div class="nav">
+			
+
+				<ul>
+					
+					<li><a href="#">logo</a></li>
+					<li><a href="#">home</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="#services">services</a></li>
+					<li><a href="#contactus">contact</a></li>
+					<li><a href="#ourteam">our team</a></li>
+					<li class="log"><a href="#">Log in</a></li>
+					<li class="sign"><a href="#">Sign up</a></li>
+					
+					<li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a></li>
+					</ul>
+					
+
+		</div>
+
+
+	
+
+	<div class="banner_image">
+		<div class="banner_content">
+			<h1>Only I can change my life.<br> <span>No one can do it for me.<span></h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, neque.</p>
+		</div>	
+	</div>
+
+	<div class="about" id="about">
+		<h1 class="title">About Us</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, eveniet temporibus reprehenderit. Veniam sunt corrupti necessitatibus quam, quia doloribus nesciunt ut eveniet, alias aspernatur eum perferendis commodi doloremque recusandae tenetur quis cumque voluptatibus officiis ea excepturi dignissimos! Repellat molestias iusto dicta facere ipsum, harum maiores illum laborum tenetur? Explicabo, cupiditate!</p>
+		<div class="btn"><a href="#">Learn More</a></div>
+	</div>
+
+	<div class="services" id="services">
+		<div class="left">
+			<h1 class="title">our Services</h1>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quia, porro repellendus dolore repudiandae, accusantium corporis harum vel iste suscipit maiores provident ullam itaque libero minus nesciunt consequatur iusto numquam asperiores quod fugiat veniam blanditiis.</p>
+			<div class="diff_services">
+				<div class="service-box" >
+					<h1 class="don-left-title">Food available in  resturants</h1>
+
+					<div class="diff_services_item" id="service-box-1">
+						
+
+							<div class="imgCont">
+	
+								<img id = "ser-img-1" src="{% static 'images/food1.jpg'%}" alt="service_image">
+							</div>
+							<div id="ser-cont-1">
+								
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+							
+						
+						
+
+							
+						
+					</div>
+					<button class="btn-1" id="ser-btn-1">More</button>
+					
+					
+				</div>
+				<div class="service-box" >
+					<h1 class="don-left-title">Food available in marriages</h1>
+					
+					<div class="diff_services_item" id="service-box-2">
+						<div class="imgCont">
+							
+							<img src="{% static 'images/food2.jpg'%}" alt="service_image">
+						</div>
+						<div class="cont" id = "ser-cont-2">
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+					</div>
+					<button class="btn-1" id="ser-btn-2">More</button>
+				</div>
+				<!-- <div class="service-box">
+					
+					<div class="diff_services_item">
+						<img src="{% static 'images/food3.jpg'%}" alt="service_image">
+						<h3 class="sub_title">Food from nearby angel</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<button class="btn-1">More</button>
+				</div> -->
+				
+			</div>
+		</div>
+		<div class="right">
+			<!-- <h1>hello</h1> -->
+		</div>
+	</div>
+	<div class="contactus" id="contactus">
+		<h1 class="title">Donations</h1>
+		<div class="donation-container">
+			<div class="don-left">
+				<h1 class="don-left-title">Donate Here</h1>
+				<div class="form-container">
+
+					<div class="form_wrapper">
+						<div class="form_input">
+							<input id = "don-name" type="text" placeholder="Name">
+						</div>
+						<div class="form_input">
+							<input id = "don-money" type="text" placeholder="Money">
+						</div>
+						<div class="form_input">
+							<textarea placeholder="Message-just give us Money"></textarea>
+						</div>
+						<div class="btn" id="con-btn">
+							<a href="#">Submit</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="don-right">
+
+				<h1 class="don-right-title">Top donaters</h1>
+				<div class="don-containers" id="don-container">
+					<span class="doners">
+						<span class="don-name">rehan(anti-bts)</span>
+						<span class="don-money">1 billion</span>
+					</span>
+					<span class="doners">
+						<span class="don-name">300 lok</span>
+						<span class="don-money">1 billion</span>
+					</span>
+					<span class="doners">
+						<span class="don-name">savagebull**</span>
+						<span class="don-money">1 billion</span>
+					</span>
+					<span class="doners">
+						<span class="don-name">chandu</span>
+						<span class="don-money">1 billion</span>
+					</span>
+					<span class="doners">
+						<span class="don-name">andy</span>
+						<span class="don-money">100</span>
+					</span>
+					<span class="doners">
+						<span class="don-name">African prince</span>
+						<span class="don-money">20</span>
+					</span>
+					
+					
+					
+					
+				</div>
+				
+			</div>
+			<div class="donExRight">
+				<h1 class="don-right-title">Donaters nearby</h1>
+				<div class="map-container">
+
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" />
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
+    	<style>
+      		#map {
+				  height: 250px;
+				  width: 100%;
+				  z-index: 1;
+			  }
+    	</style>
+ 
+  
+    	<div id="map"></div>
+    	<p><a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a></p>
+    	<script>
+      		var map = L.map('map').setView([0, 0], 1);
+			var greenIcon = L.icon({
+    		iconUrl: "{% static 'images/maps-icon.svg' %}",
+    		shadowUrl: "{% static 'images/leaf-shadow.png' %}",
+    		iconSize:     [38, 95], // size of the icon
+    		shadowSize:   [50, 64], // size of the shadow
+    		iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    		shadowAnchor: [4, 62],  // the same for the shadow
+    		popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+      	L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=TPVxUCCFrDbal5xAhQzL',{
+        tileSize: 512,
+        zoomOffset: -1,
+        minZoom: 1,
+        attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
+        crossOrigin: true
+      }).addTo(map);
+
+	  L.marker([50, -0.09], {icon: greenIcon}).addTo(map);
+	  L.marker([40, 60], {icon: greenIcon}).addTo(map);
+    </script>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="ourteam" id="ourteam">
+		<h1 class="title">our team</h1>
+		<div class="team-container">
+
+			<div class="team_members" data-name="nathan john">Team member 1</div>
+			<div class="team_members" data-name="Alyssa Healy">Team member 2</div>
+			<div class="team_members" data-name="Alec Stewart">Team member 3</div>
+			<div class="team_members" data-name="nathan john">Team member 4</div>
+			<div class="team_members" data-name="Alyssa Healy">Team member 5</div>
+			
+		</div>
+	</div>	
+
+
+	<div class="footer">
+		<a href="#">© 2019 Coding Market</a>
+	</div>
+
+
+	
+</div>	
+	<script src="{% static 'js/index.js'%}"></script>
+</body>
+</html>
